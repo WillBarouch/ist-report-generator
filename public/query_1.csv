@@ -1,0 +1,4 @@
+VehicleID,Registration,VehicleType,TransportMode,NumPass,RentalPrice,Available
+2,Mike 1,Canoe,Water,2,10,1
+7,Sea2,Sailboat,Water,8,275,1
+8,Sea3,Sailboat,Water,8,275,1
