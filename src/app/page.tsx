@@ -1,7 +1,6 @@
 
 'use client';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useState } from 'react';
 import Papa from 'papaparse';
 
 const Page = () => {
@@ -53,13 +52,15 @@ const Page = () => {
                 <table key={index} className="table-auto bg-gray-200 rounded-xl text-gray-800 overflow-clip m-8">
                     <thead>
                     <tr>
-                        {fileData.tableRows.map((header:string, index:number) => (
+                        {/*@ts-ignore*/
+                            fileData.tableRows.map((header:string, index:number) => (
                             <th key={index} className="px-4 py-2 bg-gray-300">{header}</th>
                         ))}
                     </tr>
                     </thead>
                     <tbody>
-                    {fileData.values.map((row:string, index:number) => (
+                    {/*@ts-ignore*/
+                        fileData.values.map((row:string, index:number) => (
                         <tr key={index}>
                             {Object.values(row).map((value: any, index) => (
                                 <td key={index} className="border px-4 py-2 bg-gray-100">{value}</td>
